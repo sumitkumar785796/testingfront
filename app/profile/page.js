@@ -37,7 +37,7 @@ export default function ProfilePage() {
   }
 
   const handleLogout = async () => {
-    await fetch('http://localhost:3001/api/users/logout', {
+    await fetch('https://testingapisumit.onrender.com/api/users/logout', {
       credentials: 'include',
     })
     router.push('/login')
